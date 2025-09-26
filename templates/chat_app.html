@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anna: Escape Room - Interactive Adventure</title>
+    </head>
+<body>
+    <!-- Top header -->
+    <div class="top-header">
+        <div class="header-title">Crowdtale - Help Anna Escape</div>
+        <div class="header-buttons">
+            <button id="login-btn">LOGIN</button>
+            <button id="register-btn">REGISTER</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" style="display: none;">
+        <div class="modal-content">
+            <h5>Login</h5>
+            <form id="login-form">
+                <label for="login-email">Email address</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" style="display: none;">
+        <div class="modal-content">
+            <h5>Register</h5>
+            <form id="register-form">
+                <label for="register-name">Name</label>
+                <input type="text" id="register-name" required>
+                <label for="register-email">Email address</label>
+                <input type="email" id="register-email" required>
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- Game panel -->
+        <div class="game-panel">
+            <iframe src="game-url" title="Game"></iframe>
+        </div>
+
+        <!-- Chat and Store panel -->
+        <div class="chat-store-panel">
+            <div class="store-panel">
+                <h5>Store</h5>
+                <div class="store-item">Backflip - 0.04 tIMX</div>
+                <div class="store-item">Character Boost - 0.22 tIMX</div>
+                <div class="store-item">Premium Boost - 1.10 tIMX</div>
+            </div>
+            <div class="chat-panel">
+                <div class="chat-messages" id="conversation">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <input type="text" class="chat-input" placeholder="Type your message here...">
+                <button class="chat-btn btn-send">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
